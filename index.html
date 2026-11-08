@@ -121,7 +121,7 @@ html,body{margin:0;background:var(--color-bg);color:var(--color-fg);font-family:
 </script>
 
 </head><body><div id="dash-root">
-<div class="pub-head"><span>Updated 07 Nov 2026 17:38 · read-only copy, rebuilt every morning from the Apera and robot logs</span><a href="RAIV_Fleet_KPIs.xlsx">Download Excel</a></div>
+<div class="pub-head"><span>Updated 08 Nov 2026 17:37 · read-only copy, rebuilt every morning from the Apera and robot logs</span><a href="RAIV_Fleet_KPIs.xlsx">Download Excel</a></div>
 
 
 <div class="fk">
@@ -1282,6 +1282,7 @@ truck,date,picks,picking_min,picks_per_run_hr,median_pick_s,over6_pct,place_pick
 2RT57,2026-11-04,30,17.6,102,8.21,90.0,13,7.71,7,23.29,84,9,58.6,0,0,0,800,Apera daily log
 2RT57,2026-11-05,0,0.0,,,,0,,0,,,0,0.0,0,0,0,800,Apera daily log
 2RT57,2026-11-06,1542,102.7,901,3.68,1.0,1030,3.71,507,3.36,1026,2,5.8,0,0,61,800,Apera daily log
+2RT57,2026-11-07,0,0.0,,,,0,,0,,,0,0.0,0,0,0,800,Apera daily log
 3RT51,2026-09-20,258,46.9,330,6.52,57.6,135,5.28,110,11.23,390,10,91.3,3,3,0,800,Apera daily log
 3RT51,2026-09-21,0,0.0,,,,0,,0,,,0,0.0,0,0,0,800,Apera daily log
 3RT51,2026-09-22,0,0.0,,,,0,,0,,,0,0.0,0,0,0,800,Apera daily log
@@ -16941,6 +16942,7 @@ truck,date,errors_total,camera_not_found,capture_failed,camera_link,robot_server
 2RT57,2026-11-04,5,0,0,10,0,0,0
 2RT57,2026-11-05,314,0,0,34,0,0,0
 2RT57,2026-11-06,46,38,23,31,10,0,0
+2RT57,2026-11-07,0,0,0,0,0,0,0
 3RT51,2026-09-20,842,0,0,46,1,0,3
 3RT51,2026-09-21,2,0,0,4,0,0,0
 3RT51,2026-09-22,1,0,0,2,0,0,0
@@ -16975,7 +16977,7 @@ truck,date,errors_total,camera_not_found,capture_failed,camera_link,robot_server
 <script type="text/csv" data-id="fleet_coverage">
 truck,apera_first,apera_last,apera_days,apera_pick_days,newest_robot_backup,robot_overlap
 1RT53,2026-09-09,2026-10-28,28,14,2026-10-21 12:50,yes
-2RT57,2026-10-15,2026-11-06,13,9,2026-11-06 13:20,yes
+2RT57,2026-10-15,2026-11-07,14,9,2026-11-06 13:20,yes
 3RT51,2026-09-20,2026-11-05,30,12,2026-11-05 15:37,yes
 </script>
 <script type="text/csv" data-id="fleet_robot_cycles">
@@ -26529,6 +26531,7 @@ truck,date,version,source
 2RT57,2026-11-04,TiePlates_2RT57_V1_2_6,"assumed, last logged 2026-11-03"
 2RT57,2026-11-05,TiePlates_2RT57_V1_2_6,"assumed, last logged 2026-11-03"
 2RT57,2026-11-06,TiePlates_2RT57_V1_2_10 + TiePlates_2RT57_V1_2_6,robot log
+2RT57,2026-11-07,TiePlates_2RT57_V1_2_10,"assumed, last logged 2026-11-06"
 3RT51,2026-09-20,PlateSorter (EGM),robot log
 3RT51,2026-09-21,PlateSorter (EGM),robot log
 3RT51,2026-09-22,PlateSorter (EGM),"assumed, last logged 2026-09-21"
@@ -28371,6 +28374,7 @@ truck,date,picks,scenes,pickable,unpickable,no_parts,not_selected,pickable_share
 2RT57,2026-11-04,30,32,31,1,0,0,0.969,0
 2RT57,2026-11-05,0,12,12,0,0,0,1.0,0
 2RT57,2026-11-06,1542,1566,1565,1,0,3,0.999,0
+2RT57,2026-11-07,0,0,0,0,0,0,,0
 3RT51,2026-09-20,258,917,242,62,613,112,0.264,0
 3RT51,2026-09-21,0,0,0,0,0,0,,0
 3RT51,2026-09-22,0,0,0,0,0,0,,0
@@ -28446,20 +28450,21 @@ id,truck,date,status,values_changed,detail,first_changes
 2RT57_2026-11-05_39,2RT57,2026-11-05,changed,3286,"PIPELINES CHANGED - seen 08:37, file saved by Apera 2026-11-05 08:17, 3286 value(s) changed (sha 671947bd -> 07c0648e)",+ bin_picking_pipelines.pipeline_1.advanced_pipeline = False | + bin_picking_pipelines.pipeline_1.bin_finding_config.bin_uid = | + bin_picking_pipelines.pipeline_1.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.pipeline_1.capture = capture_3 | + bin
 2RT57_2026-11-06_40,2RT57,2026-11-06,changed,1,"PIPELINES CHANGED - seen 09:37, file saved by Apera 2026-11-06 09:30, 1 value(s) changed (sha 07c0648e -> 1f41c000)",~ config_collections.config_collection_8.config_asset: vt24120301_bnb_5way__config_preset_v1.0.0_custom_v1.9.0 -> vt24120301_bnb_5way__config_preset_v1.0.0_custom_v1.14.0 | == 2026-11-06_0937_1f41c000.json -> 2026-11-06_1037_6a97b3c6.json | + datablocks.captures.capture_2.binning_config.auto_binning
 2RT57_2026-11-06_41,2RT57,2026-11-06,changed,26,"PIPELINES CHANGED - seen 10:37, file saved by Apera 2026-11-06 09:51, 26 value(s) changed (sha 1f41c000 -> 6a97b3c6)",~ config_collections.config_collection_8.config_asset: vt24120301_bnb_5way__config_preset_v1.0.0_custom_v1.9.0 -> vt24120301_bnb_5way__config_preset_v1.0.0_custom_v1.14.0 | == 2026-11-06_0937_1f41c000.json -> 2026-11-06_1037_6a97b3c6.json | + datablocks.captures.capture_2.binning_config.auto_binning
-3RT51_2026-10-22_42,3RT51,2026-10-22,baseline,,"baseline saved 09:34 (sha 9b884a25, file saved by Apera 2026-10-19 04:21). Changes are reported from now on.",
-3RT51_2026-10-23_43,3RT51,2026-10-23,changed,3186,"PIPELINES CHANGED - seen 07:37, file saved by Apera 2026-10-23 07:16, 3186 value(s) changed (sha 9b884a25 -> 83a21f35)",+ bin_picking_pipelines.RAIV_pick_AR70.advanced_pipeline = False | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.bin_uid = | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.RAIV_pick_AR70.capture = c
-3RT51_2026-10-23_44,3RT51,2026-10-23,changed,1,"PIPELINES CHANGED - seen 11:37, file saved by Apera 2026-10-23 11:24, 1 value(s) changed (sha 83a21f35 -> efab5752)",+ bin_picking_pipelines.RAIV_pick_AR70.advanced_pipeline = False | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.bin_uid = | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.RAIV_pick_AR70.capture = c
-3RT51_2026-10-23_45,3RT51,2026-10-23,changed,4,"PIPELINES CHANGED - seen 12:37, file saved by Apera 2026-10-23 11:59, 4 value(s) changed (sha efab5752 -> abccf713)",+ bin_picking_pipelines.RAIV_pick_AR70.advanced_pipeline = False | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.bin_uid = | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.RAIV_pick_AR70.capture = c
-3RT51_2026-10-26_46,3RT51,2026-10-26,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
-3RT51_2026-10-27_47,3RT51,2026-10-27,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
-3RT51_2026-10-28_48,3RT51,2026-10-28,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
-3RT51_2026-10-29_49,3RT51,2026-10-29,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
-3RT51_2026-10-30_50,3RT51,2026-10-30,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
-3RT51_2026-11-02_51,3RT51,2026-11-02,changed,6,"PIPELINES CHANGED - seen 05:37, file saved by Apera 2026-10-30 13:12, 6 value(s) changed (sha abccf713 -> 99b89740)",~ obstacles.tables.belt_pick.table.pose.p_deg: 178.9961848905993 -> 178.9962010781215 | ~ obstacles.tables.belt_pick.table.pose.r_deg: 0.6697676487939745 -> 0.6697903852426433 | ~ obstacles.tables.belt_pick.table.pose.w_deg: 0.03490227917817933 -> 0.034860614243386316 | ~ obstacles.tables.belt_pick.
-3RT51_2026-11-03_52,3RT51,2026-11-03,unchanged,,"unchanged (sha 99b89740, last change seen 2026-11-02 05:37, file saved by Apera 2026-10-30 13:12).",
-3RT51_2026-11-04_53,3RT51,2026-11-04,unchanged,,"unchanged (sha 99b89740, last change seen 2026-11-02 05:37, file saved by Apera 2026-10-30 13:12).",
-3RT51_2026-11-05_54,3RT51,2026-11-05,changed,3259,"PIPELINES CHANGED - seen 08:37, file saved by Apera 2026-11-05 07:48, 3259 value(s) changed (sha 99b89740 -> dc621a94)",+ bin_picking_pipelines.pipeline_1.advanced_pipeline = False | + bin_picking_pipelines.pipeline_1.bin_finding_config.bin_uid = | + bin_picking_pipelines.pipeline_1.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.pipeline_1.capture = capture_3 | + bin
-3RT51_2026-11-05_55,3RT51,2026-11-05,changed,3258,"PIPELINES CHANGED - seen 12:37, file saved by Apera 2026-11-05 12:25, 3258 value(s) changed (sha dc621a94 -> 2dd6d16f)",+ bin_picking_pipelines.pipeline_1.advanced_pipeline = False | + bin_picking_pipelines.pipeline_1.bin_finding_config.bin_uid = | + bin_picking_pipelines.pipeline_1.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.pipeline_1.capture = capture_3 | + bin
+2RT57_2026-11-07_42,2RT57,2026-11-07,unchanged,,"unchanged (sha 6a97b3c6, last change seen 2026-11-06 10:37, file saved by Apera 2026-11-06 09:51).",
+3RT51_2026-10-22_43,3RT51,2026-10-22,baseline,,"baseline saved 09:34 (sha 9b884a25, file saved by Apera 2026-10-19 04:21). Changes are reported from now on.",
+3RT51_2026-10-23_44,3RT51,2026-10-23,changed,3186,"PIPELINES CHANGED - seen 07:37, file saved by Apera 2026-10-23 07:16, 3186 value(s) changed (sha 9b884a25 -> 83a21f35)",+ bin_picking_pipelines.RAIV_pick_AR70.advanced_pipeline = False | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.bin_uid = | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.RAIV_pick_AR70.capture = c
+3RT51_2026-10-23_45,3RT51,2026-10-23,changed,1,"PIPELINES CHANGED - seen 11:37, file saved by Apera 2026-10-23 11:24, 1 value(s) changed (sha 83a21f35 -> efab5752)",+ bin_picking_pipelines.RAIV_pick_AR70.advanced_pipeline = False | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.bin_uid = | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.RAIV_pick_AR70.capture = c
+3RT51_2026-10-23_46,3RT51,2026-10-23,changed,4,"PIPELINES CHANGED - seen 12:37, file saved by Apera 2026-10-23 11:59, 4 value(s) changed (sha efab5752 -> abccf713)",+ bin_picking_pipelines.RAIV_pick_AR70.advanced_pipeline = False | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.bin_uid = | + bin_picking_pipelines.RAIV_pick_AR70.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.RAIV_pick_AR70.capture = c
+3RT51_2026-10-26_47,3RT51,2026-10-26,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
+3RT51_2026-10-27_48,3RT51,2026-10-27,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
+3RT51_2026-10-28_49,3RT51,2026-10-28,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
+3RT51_2026-10-29_50,3RT51,2026-10-29,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
+3RT51_2026-10-30_51,3RT51,2026-10-30,unchanged,,"unchanged (sha abccf713, last change seen 2026-10-23 12:37, file saved by Apera 2026-10-23 11:59).",
+3RT51_2026-11-02_52,3RT51,2026-11-02,changed,6,"PIPELINES CHANGED - seen 05:37, file saved by Apera 2026-10-30 13:12, 6 value(s) changed (sha abccf713 -> 99b89740)",~ obstacles.tables.belt_pick.table.pose.p_deg: 178.9961848905993 -> 178.9962010781215 | ~ obstacles.tables.belt_pick.table.pose.r_deg: 0.6697676487939745 -> 0.6697903852426433 | ~ obstacles.tables.belt_pick.table.pose.w_deg: 0.03490227917817933 -> 0.034860614243386316 | ~ obstacles.tables.belt_pick.
+3RT51_2026-11-03_53,3RT51,2026-11-03,unchanged,,"unchanged (sha 99b89740, last change seen 2026-11-02 05:37, file saved by Apera 2026-10-30 13:12).",
+3RT51_2026-11-04_54,3RT51,2026-11-04,unchanged,,"unchanged (sha 99b89740, last change seen 2026-11-02 05:37, file saved by Apera 2026-10-30 13:12).",
+3RT51_2026-11-05_55,3RT51,2026-11-05,changed,3259,"PIPELINES CHANGED - seen 08:37, file saved by Apera 2026-11-05 07:48, 3259 value(s) changed (sha 99b89740 -> dc621a94)",+ bin_picking_pipelines.pipeline_1.advanced_pipeline = False | + bin_picking_pipelines.pipeline_1.bin_finding_config.bin_uid = | + bin_picking_pipelines.pipeline_1.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.pipeline_1.capture = capture_3 | + bin
+3RT51_2026-11-05_56,3RT51,2026-11-05,changed,3258,"PIPELINES CHANGED - seen 12:37, file saved by Apera 2026-11-05 12:25, 3258 value(s) changed (sha dc621a94 -> 2dd6d16f)",+ bin_picking_pipelines.pipeline_1.advanced_pipeline = False | + bin_picking_pipelines.pipeline_1.bin_finding_config.bin_uid = | + bin_picking_pipelines.pipeline_1.bin_finding_config.pose_estimation_configs.max_yaw_deviation_deg = 45.0 | + bin_picking_pipelines.pipeline_1.capture = capture_3 | + bin
 </script>
 <script type="text/csv" data-id="fleet_robot_errors">
 truck,date,error_class,count
